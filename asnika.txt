@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5</title>
+    <link rel="stylesheet" href="../css/stylepractical5.css"></link>
+</head>
+<body>
+    <img src="../image/practical5A.PNG" alt="" style="height: 70px; width: 1200px;"
+    usemap="#Mymap" >
+    <map name="Mymap">
+        <area
+            shape="rectangle" 
+            coords="14,20 ,140,60"
+            href="https://21asthajaiswal.github.io/fullstack-practical2021/" 
+            alt=""
+         />
+         <area
+            shape="rectangle" 
+            coords="160,20, 330,70"
+            href="https://21asthajaiswal.github.io/fullstack-practical2021/pages/practical1.html" 
+            alt=""
+         />
+         <area
+            shape="rectangle" 
+            coords="350,20 , 550,70"
+            href="https://21asthajaiswal.github.io/fullstack-practical2021/pages/practical2.html" 
+            alt=""
+         />
+         <area
+            shape="rectangle" 
+            coords="570,20 , 760,70"
+            href="https://21asthajaiswal.github.io/fullstack-practical2021/pages/practical3.html" 
+            alt=""
+         />
+         <area
+            shape="rectangle" 
+            coords="780,20 , 970,70 "
+            href="https://21asthajaiswal.github.io/fullstack-practical2021/pages/practical4.html" 
+            alt=""
+         />
+         <area
+            shape="rectangle" 
+            coords="990,20 , 1250,70"
+            href="https://21asthajaiswal.github.io/fullstack-practical2021/pages/practical5.html" 
+            alt=""
+         />
+    </map>
+    <br>
+    <br>
+    <span style="color:white;">
+    <h2> Introduction to Front-End Technologies</h2>
+    </span>
+    <br>
+    <br>
+    <div id="images">
+    <img src="../image/practical5B.PNG" alt="" style="height: 300px; width: 500px;"
+    usemap="#map2" >>
+    <map name="#map2">
+      <area
+         shape="rectangle" 
+         coords="24,12 , 218,140"
+         href="../image/HTML.PNG" 
+         alt=""
+      />
+      <area
+         shape="circle" 
+         coords="360,50 ,100"
+         href="../image/css.PNG" 
+         alt=""
+   />
+      <area
+         shape="rectangle" 
+         coords="34,170 , 200,400"
+         href="../image/js.PNG" 
+         alt=""
+   />
+      <area
+         shape="poly" 
+         coords="360,150 , 280,360 , 430,380"
+         href="../image/B.PNG" 
+         alt=""
+      />
+    </map>
+   </div>
+    <span style="color : red;">
+     <p>Click on any part of logo to know more about these Technologies</p></span>
+</body>
+</html>
