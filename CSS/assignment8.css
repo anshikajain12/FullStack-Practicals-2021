@@ -46,11 +46,15 @@ body{
 h2{
 position: absolute;
 margin-top: 90px;
-color: white;
+color: #ffffffbf;
 margin-left: 50px;
 font-size: 80px;
 
 }
+
+/* .img{
+  margin-top: 10px;
+} */
 
 .img img{
     height: 100%;
