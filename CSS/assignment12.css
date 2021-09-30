@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    margin: 7px;
+}
+.head{
+    width: 80%;
+    margin: auto;
+    background-color:rgb(7, 110, 110);
+    color:white;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+tr{
+    border: 1px solid rgb(109, 103, 103);
+    border-collapse: collapse;
+    
+}
+tr:hover{
+    background-color: rgba(163, 157, 157, 0.918);
+}
+th,td{
+    padding: 5px;
+    
+}
+td{
+    margin: 2px;
+    /* padding: 2px; */
+}
+.checked{
+    color: darkgreen;
+}
+.unchecked{
+    color: red;
+}
+.fa-pencil , .fa-trash{
+    color: gray;
+    text-decoration: none;
+}
+.fa-pencil:hover , .fa-trash:hover{
+    color:blue;
+    text-decoration: none;
+}
+a{
+    color: grey;
+    text-decoration: none;
+}
+td{
+    font-size: 18px;
+}
+
+@media (max-width:767px) {
+   
+    .head{
+        width: 80%;
+        margin: auto;
+        background-color:rgb(7, 110, 110);
+        color:white;
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    table{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    tr{
+        border: 1px solid darkgrey;
+        border-collapse: collapse;
+        
+    }
+    tr:hover{
+        background-color: lightgrey;
+    }
+    th,td{
+        padding: 5px;
+    }
+    .checked{
+        color: darkgreen;
+    }
+    .unchecked{
+        color: red;
+    }
+    .fa-pencil , .fa-trash{
+        color: gray;
+        text-decoration: none;
+    }
+    .fa-pencil:hover , .fa-trash:hover{
+        color:blue;
+        text-decoration: none;
+    }
+    a{
+        color: grey;
+        text-decoration: none;
+    }
+    td{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:499px) {
+    .main{
+        margin: 7px;
+    }
+    .head{
+        width: 80%;
+        margin: auto;
+        background-color:rgb(7, 110, 110);
+        color:white;
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    table{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    tr{
+        border: 1px solid rgb(109, 103, 103);
+        border-collapse: collapse;
+        
+    }
+    tr:hover{
+        background-color: rgba(163, 157, 157, 0.918);
+    }
+    th,td{
+        padding: 5px;
+    }
+    .checked{
+        color: darkgreen;
+    }
+    .unchecked{
+        color: red;
+    }
+    .fa-pencil , .fa-trash{
+        color: gray;
+        text-decoration: none;
+    }
+    .fa-pencil:hover , .fa-trash:hover{
+        color:blue;
+        text-decoration: none;
+    }
+    a{
+        color: grey;
+        text-decoration: none;
+    }
+    td{
+        font-size: 18px;
+    }
+}
+
