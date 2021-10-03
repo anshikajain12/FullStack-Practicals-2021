@@ -21,8 +21,34 @@
 }
 table{
     border: 2px solid black;
-    border-collapse: collapse;
+    text-align: left; 
+    line-height: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+       
 }
+thead tr:first-child {
+
+    background: lightgrey;
+    color: #fff;
+    border: none;
+    line-height: 60px;
+  }
+  /* header naming css */
+  thead tr th:last-child {
+    text-align: center;
+    line-height: 50px;
+  }
+  thead tr th:nth-child(3) {
+    padding-left: 60px;
+    
+  }
+
+  th:first-child,
+  td:first-child {
+    padding: 0 20px 0 20px;
+  }
+
 tr{
     border: 1px solid rgb(109, 103, 103);
     border-collapse: collapse;
@@ -30,6 +56,14 @@ tr{
 }
 tr:hover{
     background-color: rgba(163, 157, 157, 0.918);
+    cursor: default;
+}
+ th {
+        font-weight: bold;
+}
+
+thead tr:last-child th {
+        border-bottom: 1px solid rgb(66, 64, 64);
 }
 th,td{
     padding: 5px;
@@ -39,12 +73,14 @@ td{
     margin: 2px;
     /* padding: 2px; */
 }
+
 .checked{
     color: darkgreen;
 }
 .unchecked{
     color: red;
 }
+
 .fa-pencil , .fa-trash{
     color: gray;
     text-decoration: none;
@@ -53,6 +89,37 @@ td{
     color:blue;
     text-decoration: none;
 }
+tbody tr:last-child td {
+    border: none;
+  }
+  tbody tr td:nth-child(1) {
+    width: 103px;
+  }
+  tbody tr td:nth-child(2) {
+    /* width: 500px; */
+width: 827px;
+    padding-right: 10px;
+  }
+  tbody tr td:nth-child(3) {
+    padding-left: 50px;
+    width: 440px;
+
+  }
+  tbody tr td:nth-child(4) {
+    width: 103px;
+  }
+  tbody tr td:nth-child(5) {
+    width: 315px;
+  }
+  /* line in betwwen table  */
+  tbody td {
+    border-bottom: 1px solid rgb(54, 50, 50);
+    height: 50px;
+  }
+
+  td:last-child {
+    text-align: center;
+  }
 a{
     color: grey;
     text-decoration: none;
@@ -78,8 +145,34 @@ td{
     }
     table{
         border: 2px solid black;
-        border-collapse: collapse;
+        text-align: left; 
+        line-height: 20px;
+        border-collapse: separate;
+        border-spacing: 0;
+           
     }
+    thead tr:first-child {
+    
+        background: lightgrey;
+        color: #fff;
+        border: none;
+        line-height: 60px;
+      }
+      /* header naming css */
+      thead tr th:last-child {
+        text-align: center;
+        line-height: 50px;
+      }
+      thead tr th:nth-child(3) {
+        padding-left: 60px;
+        
+      }
+    
+      th:first-child,
+      td:first-child {
+        padding: 0 20px 0 20px;
+      }
+    
     tr{
         border: 1px solid darkgrey;
         border-collapse: collapse;
@@ -88,6 +181,13 @@ td{
     tr:hover{
         background-color: lightgrey;
     }
+    th {
+        font-weight: bold;
+}
+
+thead tr:last-child th {
+        border-bottom: 1px solid rgb(66, 64, 64);
+}
     th,td{
         padding: 5px;
     }
@@ -105,6 +205,37 @@ td{
         color:blue;
         text-decoration: none;
     }
+    tbody tr:last-child td {
+        border: none;
+      }
+      tbody tr td:nth-child(1) {
+        width: 103px;
+      }
+      tbody tr td:nth-child(2) {
+        /* width: 500px; */
+    width: 827px;
+        padding-right: 10px;
+      }
+      tbody tr td:nth-child(3) {
+        padding-left: 50px;
+        width: 440px;
+    
+      }
+      tbody tr td:nth-child(4) {
+        width: 103px;
+      }
+      tbody tr td:nth-child(5) {
+        width: 315px;
+      }
+      /* line in betwwen table  */
+      tbody td {
+        border-bottom: 1px solid rgb(54, 50, 50);
+        height: 50px;
+      }
+    
+      td:last-child {
+        text-align: center;
+      }
     a{
         color: grey;
         text-decoration: none;
@@ -133,8 +264,34 @@ td{
     }
     table{
         border: 2px solid black;
-        border-collapse: collapse;
+        text-align: left; 
+        line-height: 20px;
+        border-collapse: separate;
+        border-spacing: 0;
+           
     }
+    thead tr:first-child {
+    
+        background: lightgrey;
+        color: #fff;
+        border: none;
+        line-height: 60px;
+      }
+      /* header naming css */
+      thead tr th:last-child {
+        text-align: center;
+        line-height: 50px;
+      }
+      thead tr th:nth-child(3) {
+        padding-left: 60px;
+        
+      }
+    
+      th:first-child,
+      td:first-child {
+        padding: 0 20px 0 20px;
+      }
+    
     tr{
         border: 1px solid rgb(109, 103, 103);
         border-collapse: collapse;
@@ -143,6 +300,13 @@ td{
     tr:hover{
         background-color: rgba(163, 157, 157, 0.918);
     }
+    th {
+        font-weight: bold;
+}
+
+thead tr:last-child th {
+        border-bottom: 1px solid rgb(66, 64, 64);
+}
     th,td{
         padding: 5px;
     }
@@ -160,6 +324,37 @@ td{
         color:blue;
         text-decoration: none;
     }
+    tbody tr:last-child td {
+        border: none;
+      }
+      tbody tr td:nth-child(1) {
+        width: 103px;
+      }
+      tbody tr td:nth-child(2) {
+        /* width: 500px; */
+    width: 827px;
+        padding-right: 10px;
+      }
+      tbody tr td:nth-child(3) {
+        padding-left: 50px;
+        width: 440px;
+    
+      }
+      tbody tr td:nth-child(4) {
+        width: 103px;
+      }
+      tbody tr td:nth-child(5) {
+        width: 315px;
+      }
+      /* line in betwwen table  */
+      tbody td {
+        border-bottom: 1px solid rgb(54, 50, 50);
+        height: 50px;
+      }
+    
+      td:last-child {
+        text-align: center;
+      }
     a{
         color: grey;
         text-decoration: none;
