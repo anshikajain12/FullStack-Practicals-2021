@@ -1,5 +1,13 @@
+*{
+    
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 body{
     background-color: gray;
+    display: grid;
+    place-items: center;
+    
 }
 #container{
     display: flex;
@@ -8,7 +16,7 @@ body{
     margin: auto;
     margin-top: 50px;
     text-align: center;
-    /* border: 1px solid red; */
+ 
 }
 h2{
     color: white;
