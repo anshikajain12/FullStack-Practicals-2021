@@ -1,28 +1,62 @@
+//selectors
+const form= document.getElementsByTagName('form');
+const userName= document.getElementById('username');
+const email = document.getElementById('email');
+const password1 = document.getElementById('password1');
+const password2 = document.getElementById('password2');
+const msg_arr= document.querySelectorAll("form .form-control small");
 
-var emailId= document.getElementById("email");
-var pass1= document.getElementById("p1");
-var pass2= document.getElementById("p2");
-
-function name(){
-    var user = document.getElementById("username");
-    if(user.value==""){
-        alert("enter your valid name");
+//event handller
+document.addEventListener('submit',function(e) {
+    e.preventDefault();
+    //while changing the name attribute you should also change the value in isvalidate function.
+    check(userName,"Username",0);
+    check(email,"Email-id",1);
+    if(checkBlank(password1,"Password",2)) {
+        addSucess(password1.parentNode.parentNode)
     }
-    else{
-        
+    if(checkBlank(password2,"Confirm Password",3)) {
+        if(password1.value==password2.value) {
+            addSucess(password2.parentNode.parentNode);
+        }
+        else {
+            addError(password2.parentNode.parentNode,msg_arr[3],"Password is not matched");
+        }
+    }
+});
+
+//functions
+function check(node,name,i) {
+    if (checkBlank(node,name,i)) {
+        if(!isvalidate(node.value,name)) {
+            addError(node.parentNode.parentNode,msg_arr[i],name+" is not valid");
+        }
+        else {
+            addSucess(node.parentNode.parentNode);
+        }
     }
 }
-function email() {
-    
+function checkBlank(node,name,i) {
+    if(node.value=='') {
+        addError(node.parentNode.parentNode,msg_arr[i],name+" can not be black");
+        return false;
+    }
+    return true;
 }
-function password1() {
-    
+function addError(node1,node2,msg) {
+    node1.classList.remove('sucess');
+    node1.classList.add('error');
+    node2.innerHTML=msg;
 }
-function password2() {
-    
+function addSucess(node) {
+    node.classList.remove('error');
+    node.classList.add('sucess');
 }
-
-
-
-
-
+function isvalidate(value,type) {
+    if(type=='Username'){
+        return /^([a-z0-9]+$)/.test(value);
+    }
+    if(type=='Email-id'){
+        return /^([a-zA-Z0-9\.\_\-]+)@([a-zA-z0-9]+)\.([a-zA-z]{3})$/.test(value);
+    }
+}
